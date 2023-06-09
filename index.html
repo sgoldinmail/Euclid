@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Euclid</title>
+  <link rel="icon" type="image/png" href="img/favicon-euclid.png" sizes="75x75">
+  <link rel="icon" type="image/x-icon" href="img/favicon-euclid.ico" sizes="64x64">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <button class="header__burger" aria-label="Кнопка меню"></button>
+        <img class="header__logo" src="img/header-euclid-logo.png" alt="логотип_евклид">
+        <nav class="header__nav">
+          <ul class="header__navigation navigation">
+            <li class="navigation__item">
+              <a href="#about" class="header__nav__link header__nav__link--active" aria-label="Ссылка о нас">
+                О&nbsp;нас
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#projects" class="header__nav__link header__nav__link--active" aria-label="Ссылка Проекты">
+                Проекты
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#consultation" class="header__nav__link header__nav__link--active" aria-label="Ссылка Этапы">
+                Этапы
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#reviews" class="header__nav__link header__nav__link--active" aria-label="Ссылка Отзывы">
+                Отзывы
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contacts" class="header__nav__link header__nav__link--active" aria-label="Ссылка Контакты">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__nav-list-item-search" aria-label="Кнопка поиска">
+          <svg id="" class="" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="7.56126" height="1.89031"
+              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="currentColor"></rect>
+            <path
+              d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+              stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </button>
+        <div class="navigation__search flex" aria-label="Кнопка поиска">
+          <input class="navigation__search-active-input" type="search" placeholder="Что будем искать?">
+          <svg id="navigation__search-input" class="header__nav-list-item-search-icon-input" width="24" height="24"
+            viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="7.56126" height="1.89031"
+              transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#FF9900"></rect>
+            <path
+              d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z"
+              stroke="#FF9900" stroke-width="2"></path>
+          </svg>
+
+          <svg class="exit" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)"
+              fill="#999999"></rect>
+            <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)"
+              fill="#999999"></rect>
+            <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="main__title visually-hidden">
+      Евклид проектные системы
+    </h1>
+
+    <section id="projects" class="projects" aria-labelledby="Проектные решения любой сложности">
+      <div class="container">
+        <div class="swiper-box">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(img/projects-photo-1.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(img/projects-photo-2.jpg);"></div>
+              <div class="swiper-slide" style="background-image: url(img/projects-photo-3.jpg);"></div>
+            </div>
+          </div>
+          <div class="projects__content">
+            <h2 class="projects__title">
+              Проектные решения любой сложности
+            </h2>
+            <p class="projects__text">
+              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+              проектантов
+            </p>
+            <button class="btn projects__button" aria-label="Кнопка заказть расчет">
+              Заказать расчёт
+            </button>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="О нас">
+      <div class="about__container container">
+        <h3 class="about__title title">
+          О нас
+        </h3>
+        <p class="about__descr">
+          Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда
+          внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности
+          и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно. Мы&nbsp;вынуждены
+          отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как
+          самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный
+          прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками
+          в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный
+          прототип будущего проекта способствует повышению качества экспериментов.
+        </p>
+        <div class="about__content">
+          <div class="about__col about__col1">
+            <div class="about__col1__item">
+              <p class="about__col1__text">
+                Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
+                и&nbsp;реализации новых принципов
+              </p>
+              <button class="about__col1__link btn" href="#" aria-label="Кнопка Подробнее">
+                Подробнее
+              </button>
+            </div>
+          </div>
+          <div class="about__col about__col2">
+            <div class="about__col2__item about__col2__item-img1">
+              <div class="about__col2__descr about__col2__descr1">
+                <h4 class="about__col__title">
+                  Консультация с&nbsp;широким активом
+                </h4>
+                <p class="about__col__text">
+                  А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты
+                  для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений
+                </p>
+              </div>
+            </div>
+            <div class="about__col2__item about__col2__item-img2">
+              <div class="about__col2__descr about__col2__descr2">
+                <h4 class="about__col__title">
+                  В&nbsp;своём стремлении повысить
+                </h4>
+                <p class="about__col__text">
+                  Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный
+                  эксперимент проверки прогресса профессионального сообщества
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation" aria-labelledby="Как мы работаем">
+      <div class="container">
+        <h3 class="consultation__title">Как мы&nbsp;работаем</h3>
+        <ol class="steps">
+          <li class="step">
+            <button class="step__btn" type="button" data-path="one" aria-label="Первый шаг">1&nbsp;шаг</button>
+          </li>
+          <li class="step">
+            <button class="step__btn" type="button" data-path="two" aria-label="Второй шаг">2&nbsp;шаг</button>
+          </li>
+          <li class="step">
+            <button class="step__btn" type="button" data-path="tree" aria-label="Третий шаг">3&nbsp;шаг</button>
+          </li>
+          <li class="step">
+            <button class="step__btn" type="button" data-path="four" aria-label="Четвертый шаг">4&nbsp;шаг</button>
+          </li>
+        </ol>
+        <div class="consultation-wrapper consultation-wrapper--active consultation-wrapper-one" data-target="one">
+          <div class="consultation-content">
+            <h4 class="consultation__title-4">Проводим консультацию</h4>
+            <div class="consultation__text">
+              <p class="content-text">
+                Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями.
+                В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
+                объективно рассмотрены соответствующими инстанциями.
+                А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически,
+                ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные
+                с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+                Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
+                особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
+              </p>
+            </div>
+            <button href="#" class="btn btn-orange" aria-label="Кнопка Подробнее">Подробнее</button>
+            <a href="#" class="consultation__download">Договор</a>
+          </div>
+        </div>
+
+        <div class="consultation-wrapper consultation-wrapper-two" data-target="two">
+          <div class="consultation-content">
+            <h4 class="consultation__title-4">Составляем смету</h4>
+            <div class="consultation__text">
+              <p class="content-text">
+                Внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных
+                стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими
+                инстанциями. А&nbsp;также представители современных социальных резервов, инициированные исключительно
+                синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины,
+                реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии
+                независимых исследований.
+              </p>
+            </div>
+            <button href="#" class="btn btn-orange" aria-label="Кнопка Подробнее">Подробнее</button>
+            <a href="#" class="consultation__download">Договор</a>
+          </div>
+        </div>
+
+        <div class="consultation-wrapper consultation-wrapper-tree" data-target="tree">
+          <div class="consultation-content">
+            <h4 class="consultation__title-4">Привлекаем подрядчиков</h4>
+            <div class="consultation__text">
+              <p class="content-text">
+                Идейные соображения высшего порядка, а&nbsp;также новая модель организационной деятельности требует
+                анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой
+                аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта
+                напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам,
+                что новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия.
+                Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение
+                нашей деятельности позволяет выполнить важные задания по&nbsp;разработке прогресса профессионального
+                сообщества.
+              </p>
+            </div>
+            <button href="#" class="btn btn-orange" aria-label="Кнопка Подробнее">Подробнее</button>
+            <a href="#" class="consultation__download">Договор</a>
+          </div>
+        </div>
+
+        <div class="consultation-wrapper consultation-wrapper-four" data-target="four">
+          <div class="consultation-content">
+            <h4 class="consultation__title-4">Инспектируем все этапы работ</h4>
+            <div class="consultation__text">
+              <p class="content-text">
+                Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
+                факта: высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений
+                развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности
+                говорит
+                о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности,
+                постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+              </p>
+            </div>
+            <button href="#" class="btn btn-orange" aria-label="Кнопка Подробнее">Подробнее</button>
+            <a href="#" class="consultation__download">Договор</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews" aria-labelledby="Часто задаваемые вопросы">
+      <div class="container">
+        <h3 class="reviews__title">
+          Часто задаваемые вопросы
+        </h3>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <h4 class="acc-header">
+              <span class="acc-header-text">Из&nbsp;чего формируется конечная стоимость проекта?</span>
+            </h4>
+            <p class="acc-item__text">
+              Являясь всего лишь частью общей картины, непосредственные участники технического
+              прогресса призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно
+              верифицированы. Но&nbsp;высококачественный прототип будущего проекта является качественно новой ступенью
+              первоочередных требований. А&nbsp;ещё некоторые особенности внутренней политики, которые представляют
+              собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими
+              общечеловеческие нормы этики и&nbsp;морали. И&nbsp;нет сомнений, что явные признаки победы
+              институционализации призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть
+              указаны как претенденты на&nbsp;роль ключевых факторов.<br>
+
+              Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны
+              к&nbsp;ответу. Явные признаки победы институционализации набирают популярность среди определённых слоёв
+              населения, а&nbsp;значит, должны быть объединены в&nbsp;целые кластеры себе подобных. Банальные,
+              но&nbsp;неопровержимые выводы, а&nbsp;также многие известные личности призывают нас к&nbsp;новым
+              свершениям, которые, в&nbsp;свою очередь, должны быть представлены в&nbsp;исключительно положительном
+              свете.
+            </p>
+          </li>
+          <li class="reviews__item">
+            <h4 class="acc-header">
+              <span class="acc-header-text">У&nbsp;меня есть свой проект. Сможем&nbsp;ли мы&nbsp;его доработать&nbsp;/
+                реализовать?</span>
+            </h4>
+            <p class="acc-item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nihil, iste,
+              impedit
+              accusamus nemo voluptatum repudiandae quas magni quod sapiente culpa itaque velit dolorem molestias!</p>
+          </li>
+          <li class="reviews__item">
+            <h4 class="acc-header">
+              <span class="acc-header-text">Я&nbsp;выбираю между разными компаниями. В&nbsp;чём ваше отличие?</span>
+            </h4>
+            <p class="acc-item__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita
+              repudiandae
+              inventore!</p>
+          </li>
+          <li class="reviews__item">
+            <h4 class="acc-header">
+              <span class="acc-header-text">Могу&nbsp;ли я&nbsp;делегировать вам работу&nbsp;/ согласование
+                с&nbsp;подрядчиком&nbsp;/ организацией?</span>
+            </h4>
+            <p class="acc-item__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis recusandae,
+              commodi
+              earum sint laboriosam accusantium, at porro illo ad animi esse ipsa necessitatibus corporis vel, quam et
+              culpa
+              eos quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis recusandae, commodi earum sint
+              laboriosam accusantium, at porro illo ad animi esse ipsa necessitatibus corporis vel, quam et culpa eos
+              quo.
+            </p>
+          </li>
+          <li class="reviews__item">
+            <h4 class="acc-header">
+              <span class="acc-header-text">Могу ли я вернуть деньги на каком-либо из этапов работ?</span>
+            </h4>
+            <p class="acc-item__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi at qui, doloribus
+              fugiat quibusdam expedita saepe tempora commodi dolore voluptatum eligendi impedit iure fugit soluta
+              ducimus
+              reprehenderit quam nostrum possimus, nulla, veritatis aliquam exercitationem dolorum. Voluptas explicabo
+              ab
+              numquam fugiat repudiandae eveniet pariatur cum!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__nav">
+          <img class="footer__logo" src="img/footer-euclid-logo.png" alt="логотип_евклид">
+          <ul class="footer__navigation navigation">
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">
+                О&nbsp;нас
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">
+                Проекты
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">
+                Отзывы
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="footer__download" href="#" download="#">
+                Договор оферты
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="footer__download" href="#" download="#">
+                Договор подряда
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="footer__download" href="#" download="#">
+                Конфиденциальность
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="footer__download" href="#" download="#">
+                Партнёрское&nbsp;соглашение
+              </a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка одноклассники">
+                <svg width="60" height="60" viewbox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M35.0068 39.7212C38.9103 38.7381 41.2351 36.9065 41.3951 36.7782L41.3951 36.7781C42.8797 35.5875 43.1182 33.4189 41.9276 31.9342C40.7372 30.4496 38.5687 30.2112 37.0838 31.4015L37.0819 31.4031C37.0825 31.4026 37.0817 31.4032 37.0795 31.4048C36.9863 31.4742 34.3441 33.4399 30.0366 33.4429C25.7478 33.4399 23.0548 31.4913 22.9367 31.4058C22.9333 31.4033 22.9321 31.4024 22.9329 31.4031L22.9309 31.4015C21.4461 30.2112 19.2776 30.4496 18.0872 31.9342C16.8966 33.4189 17.1351 35.5875 18.6196 36.7781C18.7845 36.9104 21.2192 38.8004 25.2583 39.7696L19.6629 45.6173C19.6627 45.6175 19.6625 45.6177 19.6623 45.6179C18.3419 46.9879 18.3818 49.1687 19.7516 50.4895L20.0986 50.1296L19.7516 50.4895C20.4201 51.1342 21.2828 51.4547 22.1431 51.4547C23.0451 51.4547 23.9478 51.1019 24.6238 50.4007L24.6239 50.4007L24.6284 50.3958L30.0528 44.6175L36.0394 50.4473C36.0403 50.4482 36.0411 50.449 36.0419 50.4498C37.3892 51.7922 39.5687 51.7892 40.9124 50.4435L40.9124 50.4435C42.257 49.0968 42.2554 46.9151 40.9086 45.5705L40.9073 45.5692L35.0068 39.7212ZM59.5 30C59.5 46.2924 46.2924 59.5 30 59.5C13.7076 59.5 0.5 46.2924 0.5 30C0.5 13.7076 13.7076 0.5 30 0.5C46.2924 0.5 59.5 13.7076 59.5 30ZM30.1838 8.64729C23.9243 8.64729 18.85 13.7217 18.85 19.9811C18.85 26.2406 23.9243 31.3154 30.1838 31.3154C36.4434 31.3154 41.5176 26.2406 41.5176 19.9811C41.5176 13.7217 36.4434 8.64729 30.1838 8.64729ZM30.1838 23.9598C27.9866 23.9598 26.2054 22.1785 26.2054 19.9812C26.2054 17.784 27.9866 16.0028 30.1838 16.0028C32.381 16.0028 34.1623 17.7841 34.1623 19.9812C34.1623 22.1785 32.381 23.9598 30.1838 23.9598Z"
+                    stroke="black" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка вконтакте">
+                <svg width="60" height="60" viewbox="0 0 60 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M30 0C13.432 0 0 13.4314 0 30C0 46.5686 13.432 60 30 60C46.568 60 60 46.5686 60 30C60 13.4314 46.568 0 30 0ZM45.2176 33.2446C46.6159 34.6103 48.0951 35.8957 49.3504 37.4026C49.9065 38.0692 50.4307 38.7585 50.8297 39.5337C51.3993 40.6392 50.8849 41.8515 49.8954 41.9171L43.7494 41.9159C42.162 42.0473 40.8988 41.4071 39.8339 40.3218C38.9837 39.457 38.195 38.5332 37.3762 37.6389C37.0416 37.2718 36.6893 36.9262 36.2695 36.6543C35.4316 36.1093 34.7036 36.2762 34.2236 37.1515C33.7344 38.0421 33.6227 39.0292 33.5761 40.0205C33.5092 41.4697 33.0721 41.8484 31.618 41.9165C28.5109 42.062 25.5628 41.5906 22.8227 40.0241C20.4055 38.6425 18.5346 36.6924 16.9043 34.4845C13.7297 30.1805 11.2984 25.4566 9.11386 20.597C8.6222 19.5026 8.98189 18.917 10.1893 18.8943C12.1952 18.8557 14.2011 18.8606 16.2071 18.8925C17.0234 18.9054 17.5636 19.3725 17.8772 20.1428C18.9612 22.8098 20.2901 25.3473 21.9554 27.7007C22.3992 28.3274 22.8522 28.9522 23.4973 29.3948C24.2093 29.8834 24.7519 29.7219 25.0877 28.9271C25.3025 28.4219 25.3952 27.8817 25.4418 27.3404C25.6014 25.486 25.6205 23.6323 25.3442 21.7854C25.1724 20.6296 24.5224 19.8832 23.3702 19.6647C22.7834 19.5536 22.8694 19.3363 23.1548 19.0011C23.6501 18.4217 24.1142 18.0632 25.0416 18.0632L31.9857 18.062C33.0801 18.2768 33.3256 18.7679 33.4742 19.8703L33.4803 27.5871C33.4674 28.0137 33.6945 29.2782 34.4606 29.5574C35.0744 29.76 35.4795 29.2677 35.8465 28.8792C37.5118 27.112 38.6983 25.0263 39.7608 22.8675C40.2298 21.9155 40.6343 20.9303 41.0271 19.9433C41.3193 19.2135 41.7735 18.8544 42.5972 18.8667L49.2841 18.8747C49.4811 18.8747 49.6812 18.8765 49.8764 18.9103C51.0034 19.103 51.3121 19.5879 50.9635 20.6873C50.4147 22.4145 49.3485 23.8533 48.3063 25.2958C47.1892 26.8401 45.9977 28.3304 44.8917 29.8815C43.8752 31.2994 43.9556 32.0133 45.2176 33.2446Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__form">
+          <h3 class="footer__title">
+            Оставить заявку
+          </h3>
+          <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <input class="form__item" placeholder="Фамилия, имя и&nbsp;отчество*" type="text" required
+              aria-label="Введите ФИО">
+            <input class="form__item" placeholder="Email*" type="email" required aria-label="Введите электронную почту">
+            <textarea class="form__item form__item-message" placeholder="Сообщение" type="text" required
+              aria-label="Введите текст сообщения"></textarea>
+            <div class="form__send">
+              <button class="btn form__btn" type="submit" aria-label="Кнопка отправить данные">
+                Отправить данные
+              </button>
+              <p class="form__consent">
+                <input class="form__item-checkbox" type="checkbox" id="Согласен на&nbsp;обработку данных"
+                  name="Согласен на&nbsp;обработку данных" checked>
+                <label class="form__label" for="Согласен на&nbsp;обработку данных" role="checkbox"
+                  aria-label="Согласие на обработку данных">
+                  Согласен на&nbsp;обработку данных
+                </label>
+              </p>
+            </div>
+          </form>
+        </div>
+        <p class="footer__text">
+          Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта:
+          разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким
+          образом, консультация
+          с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие
+          в&nbsp;формировании стандартных подходов.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
